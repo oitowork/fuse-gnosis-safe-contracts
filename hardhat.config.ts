@@ -103,6 +103,13 @@ const userConfig: HardhatUserConfig = {
       ...sharedNetworkConfig,
       url: `https://volta-rpc.energyweb.org`,
     },
+    fuse: {
+      accounts:  sharedNetworkConfig.accounts,
+      url: `https://rpc.fuse.io/`,
+      gas: 3000000,
+      gasPrice: 1000000000,
+      chainId: 122,
+    },
   },
   namedAccounts: {
     deployer: 0,
